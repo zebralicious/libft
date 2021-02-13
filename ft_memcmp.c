@@ -1,40 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/12 19:52:24 by joaopedro         #+#    #+#             */
-/*   Updated: 2021/02/12 19:53:10 by joaopedro        ###   ########.fr       */
+/*   Created: 2021/02/12 20:30:09 by joaperei          #+#    #+#             */
+/*   Updated: 2021/02/12 20:41:42 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdio.h>
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+int	ft_memcmp(const void *str1, const void *str2, size_t n)
 {
-	size_t		i;
-	char		temp[n];
-	const char	*csrc;
-	char		*cdest;
+	size_t	i;
 
 	i = 0;
-	cdest = dest;
-	csrc = src;
-	while (i < n)
+	while (*(char *)str1 && *(char *)str2 && (*(char *)str1 == *(char *)str2)
+		&& i <= n)
 	{
-		temp[i] = *csrc;
-		i++;
-		csrc++;
-	}
-	i = 0;
-	while (i < n)
-	{
-		*cdest = temp[i];
-		cdest++;
+		str1++;
+		str2++;
 		i++;
 	}
-	return (dest);
+	return (*(char *)str1 - *(char *)str2);
 }

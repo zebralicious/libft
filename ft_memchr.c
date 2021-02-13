@@ -1,40 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/12 19:52:24 by joaopedro         #+#    #+#             */
-/*   Updated: 2021/02/12 19:53:10 by joaopedro        ###   ########.fr       */
+/*   Created: 2021/02/12 20:26:33 by joaperei          #+#    #+#             */
+/*   Updated: 2021/02/12 20:27:31 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdio.h>
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memchr(const void *str, int c, size_t n)
 {
-	size_t		i;
-	char		temp[n];
-	const char	*csrc;
-	char		*cdest;
+	size_t i;
 
 	i = 0;
-	cdest = dest;
-	csrc = src;
 	while (i < n)
 	{
-		temp[i] = *csrc;
+		if (*(char *)str == c)
+			return ((char *)str);
 		i++;
-		csrc++;
+		str++;
 	}
-	i = 0;
-	while (i < n)
-	{
-		*cdest = temp[i];
-		cdest++;
-		i++;
-	}
-	return (dest);
+	return (0);
 }
