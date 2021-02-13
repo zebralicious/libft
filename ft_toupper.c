@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joaperei <joaperei@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 13:16:37 by joaperei          #+#    #+#             */
-/*   Updated: 2021/02/10 13:16:37 by joaperei         ###   ########.fr       */
+/*   Updated: 2021/02/13 19:52:12 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
 	if (c >= 97 && c <= 122)
 		return (c - 32);
-	return(c);
+	return (c);
 }

@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joaperei <joaperei@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 17:16:28 by joaperei          #+#    #+#             */
-/*   Updated: 2021/02/10 17:16:28 by joaperei         ###   ########.fr       */
+/*   Updated: 2021/02/13 19:49:16 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void *ft_bzero(void *str, size_t n)
+#include <string.h>
+
+void	*ft_bzero(void *str, size_t n)
 {
 	size_t i;
 

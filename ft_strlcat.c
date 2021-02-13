@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joaperei <joaperei@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 13:29:25 by joaperei          #+#    #+#             */
-/*   Updated: 2021/02/10 13:29:25 by joaperei         ###   ########.fr       */
+/*   Updated: 2021/02/13 19:54:43 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	ft_strlcat(char *dest, const char *src, size_t size);
+#include <string.h>
+
+size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
 	size_t i;
 	size_t j;

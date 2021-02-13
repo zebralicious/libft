@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joaperei <joaperei@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 12:15:08 by joaperei          #+#    #+#             */
-/*   Updated: 2021/02/10 12:15:08 by joaperei         ###   ########.fr       */
+/*   Updated: 2021/02/13 19:55:12 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_atoi(const char *str)
 {
-	int		value;
-	int 		sign;
-	int 		i;
+	int	value;
+	int	sign;
+	int	i;
 
 	value = 0;
 	sign = 1;

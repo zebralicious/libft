@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joaperei <joaperei@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 17:07:49 by joaperei          #+#    #+#             */
-/*   Updated: 2021/02/10 17:07:49 by joaperei         ###   ########.fr       */
+/*   Updated: 2021/02/13 19:53:59 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void *ft_memset(void *str, int c, size_t n)
+#include <string.h>
+
+void	*ft_memset(void *str, int c, size_t n)
 {
 	size_t i;
 
@@ -19,7 +21,7 @@ void *ft_memset(void *str, int c, size_t n)
 	{
 		*(char *)str = c;
 		str++;
-		i++; 
+		i++;
 	}
 	return (str);
 }

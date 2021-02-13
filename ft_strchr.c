@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joaperei <joaperei@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 10:35:41 by joaperei          #+#    #+#             */
-/*   Updated: 2021/02/10 10:35:41 by joaperei         ###   ########.fr       */
+/*   Updated: 2021/02/13 19:48:53 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_srtchr(const char *str, int c)
+char	*ft_srtchr(const char *str, int c)
 {
 	while (*str)
 	{

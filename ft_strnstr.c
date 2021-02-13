@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joaperei <joaperei@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 11:19:38 by joaperei          #+#    #+#             */
-/*   Updated: 2021/02/10 11:19:38 by joaperei         ###   ########.fr       */
+/*   Updated: 2021/02/13 19:46:15 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strnstr(const char *src, const char *tofind, int slen)
+char	*ft_strnstr(const char *src, const char *tofind, int slen)
 {
 	int i;
 	int j;
@@ -18,7 +18,6 @@ char *ft_strnstr(const char *src, const char *tofind, int slen)
 	i = 0;
 	if (!*tofind)
 		return ((char *)src);
-
 	while (src[i] != '\0' && i < slen)
 	{
 		j = 0;
@@ -26,7 +25,6 @@ char *ft_strnstr(const char *src, const char *tofind, int slen)
 		{
 			if (tofind[j + 1] == '\0')
 				return ((char *)src + i);
-
 			j++;
 		}
 		i++;

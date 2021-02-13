@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joaperei <joaperei@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 12:37:27 by joaperei          #+#    #+#             */
-/*   Updated: 2021/02/10 12:37:27 by joaperei         ###   ########.fr       */
+/*   Updated: 2021/02/13 19:53:12 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
