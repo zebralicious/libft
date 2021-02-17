@@ -6,18 +6,18 @@
 /*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/09 20:11:26 by joaperei          #+#    #+#             */
-/*   Updated: 2021/02/13 19:48:23 by joaperei         ###   ########.fr       */
+/*   Updated: 2021/02/16 00:04:34 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
-size_t	ft_strlen(char *str)
+size_t	ft_strlen(const char *str)
 {
-	int lenght;
+	size_t len;
 
-	lenght = 0;
-	while (*str != '/0')
-		lenght++;
-	return (lenght);
+	len = 0;
+	while (str[len] != '\0')
+		len++;
+	return (len);
 }

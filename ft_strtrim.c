@@ -1,24 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/10 10:35:41 by joaperei          #+#    #+#             */
-/*   Updated: 2021/02/14 17:31:53 by joaperei         ###   ########.fr       */
+/*   Created: 2021/02/15 23:55:40 by joaperei          #+#    #+#             */
+/*   Updated: 2021/02/17 19:16:31 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_srtchr(const char *str, int c)
+static int		is_set(char c, char const *set)
 {
-	while (*str)
+	int i;
+
+	i = 0;
+	while (set[i] != '\0')
 	{
-		if (*str == (char)c)
-			return ((char *)str);
-		str++;
+		if (c == set[i])
+			return (1);
+		i++;
 	}
 	return (0);
+}
+
+char			*ft_strtrim(const char *s1, const char *set)
+{
+	int i;
+	int j;
+
+	i = 0;
+	if (!s1 || !set)
+		return (NULL);
+	while (s1[i] != '\0' && is_set(s1[i], set) == 1)
+		i++;
+	j = ft_strlen(s1) - 1;
+	while (j != i && is_set(s1[j], set) == 1)
+		j--;
+	return (ft_substr(s1, i, j - i + 1));
 }

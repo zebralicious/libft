@@ -6,11 +6,11 @@
 /*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 14:22:34 by joaperei          #+#    #+#             */
-/*   Updated: 2021/02/13 19:50:19 by joaperei         ###   ########.fr       */
+/*   Updated: 2021/02/16 18:06:44 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t size)
 {

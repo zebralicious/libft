@@ -1,18 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/10 12:59:31 by joaperei          #+#    #+#             */
-/*   Updated: 2021/02/14 19:09:45 by joaperei         ###   ########.fr       */
+/*   Created: 2021/02/14 16:40:05 by joaperei          #+#    #+#             */
+/*   Updated: 2021/02/17 18:58:19 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c)
+void	ft_putendl_fd(char *s, int fd)
 {
-	return ((c >= '0' && c <= '9'));
+	ft_putstr_fd(s, fd);
+	ft_putchar_fd('\n', fd);
 }

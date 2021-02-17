@@ -6,11 +6,11 @@
 /*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 13:29:25 by joaperei          #+#    #+#             */
-/*   Updated: 2021/02/13 19:54:43 by joaperei         ###   ########.fr       */
+/*   Updated: 2021/02/14 17:31:53 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {

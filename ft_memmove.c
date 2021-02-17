@@ -6,12 +6,11 @@
 /*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/12 19:52:24 by joaopedro         #+#    #+#             */
-/*   Updated: 2021/02/12 19:53:10 by joaopedro        ###   ########.fr       */
+/*   Updated: 2021/02/15 19:49:28 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

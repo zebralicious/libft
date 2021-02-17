@@ -6,9 +6,11 @@
 /*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 13:16:37 by joaperei          #+#    #+#             */
-/*   Updated: 2021/02/13 19:52:12 by joaperei         ###   ########.fr       */
+/*   Updated: 2021/02/14 17:31:53 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_toupper(int c)
 {

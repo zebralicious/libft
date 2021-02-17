@@ -6,9 +6,11 @@
 /*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 12:15:08 by joaperei          #+#    #+#             */
-/*   Updated: 2021/02/13 19:55:12 by joaperei         ###   ########.fr       */
+/*   Updated: 2021/02/14 18:28:57 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

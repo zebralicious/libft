@@ -6,14 +6,16 @@
 /*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 11:19:38 by joaperei          #+#    #+#             */
-/*   Updated: 2021/02/13 19:46:15 by joaperei         ###   ########.fr       */
+/*   Updated: 2021/02/14 17:31:53 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strnstr(const char *src, const char *tofind, int slen)
+#include "libft.h"
+
+char	*ft_strnstr(const char *src, const char *tofind, size_t slen)
 {
-	int i;
-	int j;
+	size_t i;
+	size_t j;
 
 	i = 0;
 	if (!*tofind)
