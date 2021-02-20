@@ -6,7 +6,7 @@
 /*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/13 20:14:05 by joaperei          #+#    #+#             */
-/*   Updated: 2021/02/15 21:13:54 by joaperei         ###   ########.fr       */
+/*   Updated: 2021/02/20 19:40:55 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,16 @@
 char	*ft_strdup(const char *s)
 {
 	char *dest;
+	int i;
 
-	dest = malloc(ft_strlen(s) + 1);
-	if (!dest)
+	i = 0;
+	if (!(dest = malloc(ft_strlen(s) + 1)))
 		return (NULL);
-	while (*s != '\0')
+	while (s[i] != '\0')
 	{
-		*dest = *s;
-		dest++;
-		s++;
+		dest[i] = s[i];
+		i++;
 	}
-	*dest = '\0';
+	dest[i] = '\0';
 	return (dest);
 }

@@ -6,7 +6,7 @@
 /*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/14 17:09:18 by joaperei          #+#    #+#             */
-/*   Updated: 2021/02/17 19:14:42 by joaperei         ###   ########.fr       */
+/*   Updated: 2021/02/20 20:18:31 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char			*ft_strrchr(const char *str, int c);
 char			*ft_strtrim(char const *s1, char const *set);
 char			*ft_substr(char const *s, unsigned int start, size_t len);
 
-void			ft_bzero(void *s, size_t n);
+void			ft_bzero(void *str, size_t n);
 void			*ft_calloc(size_t nmemb, size_t size);
 void			*ft_memcpy(void *s, const void *src, size_t n);
 void			*ft_memccpy(void *dest, const void *src, int c, size_t n);
