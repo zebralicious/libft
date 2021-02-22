@@ -6,7 +6,7 @@
 /*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/14 17:09:18 by joaperei          #+#    #+#             */
-/*   Updated: 2021/02/20 20:18:31 by joaperei         ###   ########.fr       */
+/*   Updated: 2021/02/20 22:30:48 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@
 # include <stdio.h>
 # include <ctype.h>
 
-size_t			ft_strlen(const char *str);
-size_t			ft_strlcpy(char *dest, char *src, size_t size);
-size_t			ft_strlcat(char *dest, const char *src, size_t size);
+size_t			ft_strlen(const char *s);
+size_t			ft_strlcpy(char *dst, char *src, size_t size);
+size_t			ft_strlcat(char *dst, const char *src, size_t size);
 
 char			*ft_itoa(int n);
 char			**ft_split(char const *s, char c);

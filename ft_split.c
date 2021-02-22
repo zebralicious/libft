@@ -6,7 +6,7 @@
 /*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/15 16:11:14 by joaperei          #+#    #+#             */
-/*   Updated: 2021/02/17 19:14:22 by joaperei         ###   ########.fr       */
+/*   Updated: 2021/02/22 19:05:18 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,24 +15,34 @@
 static int		ft_nwords(char *str, char c)
 {
 	int count;
+	int flag;
 
 	count = 0;
+	flag = 1;
 	while (*str)
 	{
 		if (*str == c)
+			flag = 1;
+		else if (flag == 1)
+		{
+			flag = 0;
 			count++;
+		}
 		str++;
 	}
 	return (count);
 }
 
-static int		ft_substrlen(char *str, char c)
+static int		ft_substrlen(char *str, char c, int i)
 {
 	int len;
 
 	len = 0;
-	while (str[len] != '\0' && str[len] != c)
+	while (str[i] != '\0' && str[i] != c)
+	{
+		i++;
 		len++;
+	}
 	return (len);
 }
 
@@ -51,21 +61,30 @@ char			**ft_split(const char *s, char c)
 {
 	int		nwords;
 	int		i;
+	int		j;
 	char	**split;
 
 	i = 0;
+	j = 0;
 	nwords = ft_nwords((char *)s, c);
 	if (!(split = (char **)malloc((nwords + 1) * sizeof(char *))))
 		return (NULL);
-	while (nwords-- >= 0)
+
+
+
+
+	while (i < nwords && s[j] != '\0')
 	{
-		if (*s == c && *s != '\0')
-			s++;
-		split[i] = ft_substr((char *)s, 0, ft_substrlen((char *)s, c));
+		while (s[j] == c)
+			j++;
+		split[i] = ft_substr((char *)s, j, ft_substrlen((char *)s, c, j));
 		if (!split[i])
 			return (mfree(split, i));
-		s = s + ft_substrlen((char *)s, c);
+		while (s[j] != c)
+			j++;
+		//s = s + ft_substrlen((char *)s, c, j);
 		i++;
 	}
+	split[i] = NULL;
 	return (split);
 }

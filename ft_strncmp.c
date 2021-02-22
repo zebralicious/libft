@@ -6,7 +6,7 @@
 /*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 11:59:33 by joaperei          #+#    #+#             */
-/*   Updated: 2021/02/14 17:31:53 by joaperei         ###   ########.fr       */
+/*   Updated: 2021/02/22 16:37:12 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,11 @@ int	ft_strncmp(const char *str1, const char *str2, size_t num)
 	size_t i;
 
 	i = 0;
-	while (str1[i] == str2[i] && i < num)
+	while (i < num)
 	{
-		if (str1[i + 1] == '\0' && str2[i + 1] == '\0')
-			return (0);
+		if (str1[i] != str2[i])
+			return (str1[i] - str2[i]);
 		i++;
-	}
-	return (str1[i] - str2[i]);
+	}		
+	return (0);
 }

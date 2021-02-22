@@ -6,7 +6,7 @@
 /*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 14:53:54 by joaperei          #+#    #+#             */
-/*   Updated: 2021/02/14 17:31:53 by joaperei         ###   ########.fr       */
+/*   Updated: 2021/02/22 16:19:28 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,12 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t size)
 	while (i < size)
 	{
 		ndest[i] = nsrc[i];
-		i++;
 		if (nsrc[i] == c)
 		{
 			ndest[i] = nsrc[i];
 			return (dest + i + 1);
 		}
+		i++;
 	}
 	return (0);
 }

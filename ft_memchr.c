@@ -6,7 +6,7 @@
 /*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/12 20:26:33 by joaperei          #+#    #+#             */
-/*   Updated: 2021/02/15 20:22:34 by joaperei         ###   ########.fr       */
+/*   Updated: 2021/02/22 16:22:18 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		if (*(unsigned char *)s == c)
+		if (*(unsigned char *)s == (unsigned char)c)
 			return ((unsigned char *)s);
 		i++;
 		s++;
