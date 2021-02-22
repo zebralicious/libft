@@ -6,7 +6,7 @@
 /*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/14 17:09:18 by joaperei          #+#    #+#             */
-/*   Updated: 2021/02/20 22:30:48 by joaperei         ###   ########.fr       */
+/*   Updated: 2021/02/22 19:57:15 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <string.h>
-# include <stdio.h>
-# include <ctype.h>
 
 size_t			ft_strlen(const char *s);
 size_t			ft_strlcpy(char *dst, char *src, size_t size);

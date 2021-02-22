@@ -6,7 +6,7 @@
 /*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/15 23:55:40 by joaperei          #+#    #+#             */
-/*   Updated: 2021/02/22 18:16:48 by joaperei         ###   ########.fr       */
+/*   Updated: 2021/02/22 19:52:18 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ char			*ft_strtrim(const char *s1, const char *set)
 	i = 0;
 	if (!s1 || !set)
 		return (NULL);
-	while (s1[i]  && is_set(s1[i], set) == 1)
+	while (s1[i] && is_set(s1[i], set) == 1)
 		i++;
 	j = ft_strlen(s1);
 	if (i == j)
@@ -46,6 +46,5 @@ char			*ft_strtrim(const char *s1, const char *set)
 			j--;
 		len = j - i;
 	}
-
 	return (ft_substr(s1, i, len));
 }

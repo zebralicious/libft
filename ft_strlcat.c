@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
+/*   By: famirand <famirand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/10 13:29:25 by joaperei          #+#    #+#             */
-/*   Updated: 2021/02/20 22:30:37 by joaperei         ###   ########.fr       */
+/*   Created: 2021/02/15 20:55:57 by famirand          #+#    #+#             */
+/*   Updated: 2021/02/22 15:42:11 by famirand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,12 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t i;
 	size_t j;
 
-	i = 0;
+	i = ft_strlen(dst);
 	j = 0;
-	while (dst[i] != '\0' && i < size)
-		i++;
-	while (src[j] != '\0' && (j + i + 1) < size)
-	{
-		dst[j + i] = src[j];
-		j++;
-	}
-	dst[j + i] = '\0';
-	return (i + ft_strlen(src));
+	if (size <= i)
+		return (size + ft_strlen(src));
+	while (src[j] != '\0' && i + 1 < size)
+		dst[i++] = src[j++];
+	dst[i] = '\0';
+	return (i + (ft_strlen(src) - j));
 }

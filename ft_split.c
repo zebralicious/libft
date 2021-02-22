@@ -6,7 +6,7 @@
 /*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/15 16:11:14 by joaperei          #+#    #+#             */
-/*   Updated: 2021/02/22 19:05:18 by joaperei         ###   ########.fr       */
+/*   Updated: 2021/02/22 19:50:56 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,10 +69,6 @@ char			**ft_split(const char *s, char c)
 	nwords = ft_nwords((char *)s, c);
 	if (!(split = (char **)malloc((nwords + 1) * sizeof(char *))))
 		return (NULL);
-
-
-
-
 	while (i < nwords && s[j] != '\0')
 	{
 		while (s[j] == c)
@@ -82,7 +78,6 @@ char			**ft_split(const char *s, char c)
 			return (mfree(split, i));
 		while (s[j] != c)
 			j++;
-		//s = s + ft_substrlen((char *)s, c, j);
 		i++;
 	}
 	split[i] = NULL;
