@@ -6,7 +6,7 @@
 /*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/14 16:51:07 by joaperei          #+#    #+#             */
-/*   Updated: 2021/02/17 19:01:08 by joaperei         ###   ########.fr       */
+/*   Updated: 2021/02/27 14:08:48 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == -2147483648)
 	{
-		write(fd, "-2147483648", 12);
+		write(fd, "-2147483648", 11);
 		return ;
 	}
 	if (n < 0)
