@@ -6,7 +6,7 @@
 /*   By: joaperei <joaperei@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/13 20:50:43 by joaperei          #+#    #+#             */
-/*   Updated: 2021/02/15 21:36:32 by joaperei         ###   ########.fr       */
+/*   Updated: 2021/02/27 17:59:11 by joaperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strjoin(const char *s1, const char *s2)
 
 	i = 0;
 	j = 0;
-	if (!(join = (char *)malloc(strlen(s1) + strlen(s2) + 1)))
+	if (!(join = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) + 1)))
 		return (NULL);
 	while (s1[i] != '\0')
 	{
